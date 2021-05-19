@@ -1,0 +1,75 @@
+#remoteVideo{
+ 
+    height: 300px;
+    width: 30%;
+}
+#localVideo
+{
+    width: 30%;
+    height: 300px;
+}
+#messagea{
+    position: relative;
+    left: 700px;
+    display: inline-block;
+    width: 40%;
+    margin-left: 0px;
+}
+#mtwo{
+    display: inline-block;
+    width: 40%;
+    margin-left: 0px;
+    position: relative;
+    right:500px;
+}
+#your{
+    position: relative;
+    left: 1000px;
+    top: 45px;
+}
+#buttonSetName{
+  position: relative;
+ left: 320px;
+ height:40px;
+ border-radius: 10px;
+
+}
+#inputCallName{
+    position: relative;
+    left: 300px;
+    width: 400px;
+    height: 30px;
+}
+#remoteVideo{
+    margin-left: 350px;
+}
+
+#cutcall{
+    height: 60px;
+    width: 80px;
+    position: relative;
+    right: 600px;
+    border-radius: 50px;
+    background-color: cadetblue;
+}
+#mute{
+    height: 60px;
+    width: 80px;
+    position: relative;
+    right: 600px;
+    border-radius: 50px;
+    background-color: cadetblue;
+    bottom: 300px;
+    left: 503px;
+}
+#off{
+    height: 60px;
+    width: 80px;
+    position: relative;
+    right: 600px;
+    border-radius: 50px;
+    background-color: cadetblue;
+    bottom: 185px;
+    left: 419px;
+}
+}
