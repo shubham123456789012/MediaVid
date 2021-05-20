@@ -1,7 +1,11 @@
 body{
     margin: 0px;
     background-image: url(../img/bg.png);
+    font-family: Helvetica, Arial, Sans-Serif;
+
 }
+
+  
 #remoteVideo{
  
     height: 300px;
