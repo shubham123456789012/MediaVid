@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+    background-image: url(../img/bg.png);
+}
 #remoteVideo{
  
     height: 300px;
@@ -26,6 +30,7 @@
     position: relative;
     left: 1000px;
     top: 45px;
+    color: white;
 }
 #buttonSetName{
   position: relative;
@@ -49,8 +54,8 @@
     width: 80px;
     position: relative;
     right: 600px;
-    border-radius: 50px;
-    background-color: cadetblue;
+    border-radius: 20px;
+    background-color: rgb(42, 173, 206);
 }
 #mute{
     height: 60px;
