@@ -1,8 +1,9 @@
+
 body{
     margin: 0px;
     background-image: url(../img/bg.png);
     font-family: Helvetica, Arial, Sans-Serif;
-
+         
 }
 
   
@@ -32,9 +33,10 @@ body{
 }
 #your{
     position: relative;
-    left: 1000px;
+    left: 700px;
     top: 45px;
     color: white;
+    width: 40%;
 }
 #buttonSetName{
   position: relative;

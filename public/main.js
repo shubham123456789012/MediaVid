@@ -18,12 +18,11 @@ const iceServers = {
     { 'urls': 'stun:stun.services.mozilla.com' },
     { 'urls': 'stun:stun.l.google.com:19302' }
   ]
-};
-
-const streamConstraints = {
-  audio: true,
-  video: true
 }
+  var streamConstraints = {
+    audio: true,
+    video: true
+  } 
 const socket = io();
 buttonGoRoom.onclick = async function() {
   if (!inputRoomNumber.value) {
@@ -75,7 +74,6 @@ socket.on('ready', async function (room) {
       room: roomNumber,
     });
    
-    //dataChannel.onmessage = event => { headingCallName.innerText = event.data };
   dataChannel.onmessage = (event => { 
       let msg=document.createElement('h2')
       msg.innerHTML=event.data;
@@ -146,3 +144,5 @@ function onicecandidate(event) {
     socket.emit('candidate', outgoing);
   }
 }
+
+ 
