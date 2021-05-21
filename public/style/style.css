@@ -1,14 +1,14 @@
 
 body{
     margin: 0px;
-    background-image: url("../img/bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url("../img/bg.png") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: ,monospace,Helvetica, Arial, Sans-Serif,serif;
          
 }
-
-  
 #remoteVideo{
  
     height: 300px;
