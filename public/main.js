@@ -74,15 +74,13 @@ socket.on('ready', async function (room) {
       room: roomNumber,
     });
    
-  dataChannel.onmessage = (event => { 
+  dataChannel.onmessage = ((event) => { 
       let msg=document.createElement('h2')
       msg.innerHTML=event.data;
       textatwo.appendChild(msg); 
     }) 
   }
 });
-
-
 socket.on('offer', async function (event) {
   if (!isCaller) {
     rtcPeerConnection = new RTCPeerConnection(iceServers);
@@ -91,6 +89,14 @@ socket.on('offer', async function (event) {
     rtcPeerConnection.addTrack(localStream.getTracks()[0], localStream);
     rtcPeerConnection.addTrack(localStream.getTracks()[1], localStream);
     rtcPeerConnection.setRemoteDescription(new RTCSessionDescription(event));
+    
+    const sdp = await rtcPeerConnection.createAnswer();
+    rtcPeerConnection.setLocalDescription(sdp);
+    socket.emit('answer', {
+      type: 'answer',
+      sdp: sdp,
+      room: roomNumber,
+    });
     rtcPeerConnection.ondatachannel = event => {
       dataChannel = event.channel;
       dataChannel.onmessage = event => {
@@ -99,13 +105,6 @@ socket.on('offer', async function (event) {
       textatwo.appendChild(msg12); 
         }
     };
-    const sdp = await rtcPeerConnection.createAnswer();
-    rtcPeerConnection.setLocalDescription(sdp);
-    socket.emit('answer', {
-      type: 'answer',
-      sdp: sdp,
-      room: roomNumber,
-    });
 
   }
 });
