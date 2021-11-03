@@ -1,7 +1,7 @@
 
 body{
     margin: 0px;
-    background-image: url("../img/bg.PNG") ;
+    background-color: rgb(46, 80, 80);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
