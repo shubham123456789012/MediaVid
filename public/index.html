@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>video calling</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+   <br>
+   <br>
+
+    <h1 style="text-align: center; color: white;">WELCOME TO MEDIAVID</h1>
+    <br>
+    <br>
+    <br>
+    <div id= 'selectRoom' style="text-align: center;">
+      <label  style="font-size: 30px; color: white;"  for="room">Enter the room name -- </label>
+      <input style="height: 30px; width: 360px;" type="text" id='roomNumber'>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button style="height: 45px; width: 80px; border-radius: 10px;" id='goRoom'>Go</button>
+    </div>
+    <div id='consultingRoom' style="display: none;">
+      <p>
+        <input type="text" id="inputCallName" >
+        <button id="buttonSetName">ENTER MESSAGE</button>
+      </p>
+      <span>
+        <video  autoplay id="localVideo" muted="muted">
+         
+        </video></span>
+      <span><video  autoplay id="remoteVideo" ></video></span>
+      <button id="cutcall" onClick="window.location.reload();"> <h3 style="color: white;">End Call</h3> </button>
+     
+      
+      <h1 id="your">Your messages</h1>
+      <h1 id="second" style="color: white; width: 40%;">Second users messages</h1>
+      <span id="messagea" style="color: white;">
+      </span>
+     <span id="mtwo" style="color: white;"></div>
+     </span>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
