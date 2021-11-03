@@ -1,7 +1,7 @@
 
 body{
     margin: 0px;
-    background-image: url("../img/bg3.PNG") ;
+    background-image: url("../img/bg.PNG") ;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -85,5 +85,4 @@ body{
     background-color: cadetblue;
     bottom: 185px;
     left: 419px;
-}
 }
