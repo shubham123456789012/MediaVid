@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 body{
     margin: 0px;
@@ -8,6 +9,12 @@ body{
     background-size: cover;
     font-family:  monospace,Helvetica, Arial, Sans-Serif,serif;
          
+=======
+body{
+    margin: 0px;
+    background-image: url(../img/bg.png);
+    font-family: Helvetica, Arial, Sans-Serif;       
+>>>>>>> ffe39bfc49f70f345a6255a7559f709409e184b8
 }
 #remoteVideo{
  
@@ -84,4 +91,9 @@ body{
     background-color: cadetblue;
     bottom: 185px;
     left: 419px;
+<<<<<<< HEAD
 }
+=======
+}
+}
+>>>>>>> ffe39bfc49f70f345a6255a7559f709409e184b8
